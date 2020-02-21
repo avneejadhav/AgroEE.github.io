@@ -1,0 +1,300 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+	cursor: pointer;
+	scroll-behavior: smooth;
+}
+
+#nav-bar{
+	
+	top: 0;
+	z-index: 10;
+}
+.navbar-brand img{
+	height: 40px;
+	padding-left: 30px;
+} 
+.navbar-nav li{
+	padding: 0 10px;
+}
+.navbar-nav{
+	float: right;
+	text-align: left;
+}
+#nav-bar ul li a:hover{
+	color: #007bff!important;
+}
+.navbar{
+	background:#fff;
+}
+.navbar-toggler{
+	border: none!important;
+}
+.nav-link{
+	color: #555!important;
+	font-weight: 600;
+	font-size: 16px;
+}
+.row1{
+    margin-top:6%;
+    margin-bottom:3%; 
+}
+
+.content-box{
+	background: #efefef;
+	height: 100%;
+	width: 100%;
+}
+.container h1{
+	text-align: center;
+	padding-top: 50px;
+}
+.container h1::after{
+	content: '';
+	background: #191970;
+	display: block;
+	height: 3px;
+	width: 120px;
+	margin: 20px auto 50px;
+}
+.services .icon{
+	font-size: 30px;
+	margin: 20px auto;
+	padding: 18px;
+	height: 70px;
+	width: 70px;
+	border: 1px solid #191970;
+	border-radius: 50%;
+	color: #191970;
+}
+.services p{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #777;
+	padding: 20px;
+}
+.services span{
+	color: #191970;
+	transition: .5s;
+}
+.services .col-md-3:hover{
+	background: grey;
+	cursor: pointer;
+	color: #fff;
+	box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+	transition: .5s;
+}
+.services .col-md-3:hover p{
+	color: #fff;
+}
+.services .col-md-3:hover span{
+
+	color: #fff;
+}
+.text{
+	margin: 40px auto;
+}
+#about{
+	padding-top: 5px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+#about .row{
+	margin-top: 30px;
+}
+.about-content{
+	padding: 70px 10px 10px;
+	background-color: #efefef;
+
+}
+.about-content:hover{
+	/*box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);*/
+	cursor: pointer;
+	transition: 0.5s;
+}
+/*span{
+	display: flex;
+	justify-content: center;
+}
+/*#about h1::after{
+	content: '';
+	background: #191970;
+	display: block;
+	height: 3px;
+	width: 120px;
+	margin: 20px auto 50px;
+}*/
+.progress .container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 120px;
+}
+/*.container .box{
+	width: 25%;
+	float: left;
+}
+.container .box h2{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}*/
+.main{
+ 
+  background-color: #efefef;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.main span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .main {
+      text-align: center;
+  }
+  .main img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+.text-center{
+	margin: 40px auto;
+
+}
+.profile{
+	padding: 70px 10px 10px;
+	background-color: #efefef;
+}
+/*.profile .user{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+}
+.profile img{
+	top: -5px;
+	position: absolute;
+	left: calc(30%);
+	border: 10px solid #fff;
+}
+span{
+	font-size: 20px;
+	color: black;
+}*/
+.main:hover{
+box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+cursor: pointer;
+transition: 0.5s;
+}
+/*.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: rgba(255,85,0, .7);
+  text-align: center;
+  color: #4E4C48;
+ 
+*/
+/* .box1{
+ 	animation-delay: 4s;
+ }
+ .box2{
+ 	animation-delay: 3.5s;
+ }
+ .box3{
+ 	animation-delay: 3s;
+ }
+ .box4{
+ 	animation-delay: 5s;
+ }
+ .box5{
+ 	animation-delay: 4.5s;
+ }
+ .pro{
+ 	animation-delay: 5.5s;
+ }
+ .chart{
+ 	animation-delay: 6s;
+ }
+ .matter1{
+ 	animation-delay: 2s;
+ }
+ .t1{
+ 	animation-delay: 1s;
+ }
+ .t2{
+ 	animation-delay: 6s;
+ }
+.s1{
+	animation-delay: 7s;
+
+}
+.s2{
+	animation-delay: 6.5s;
+}
+.s3{
+	animation-delay: 7.5s;
+}
+.s4{
+	animation-delay: 8s;
+}
+.t3{
+	animation-delay: 8.5s;
+}
+.matter2{
+	animation-delay: 9.5s;
+}
+.title{
+	animation-delay: .5s;
+}
+.p1{
+	animation-delay: 1s;
+}
+.p2{
+	animation-delay: 1.5s;
+}
+.p3{
+	animation-delay: 2s;
+}
+.p4{
+	animation-delay: 2.5s;
+}
+.p5{
+	animation-delay: 3s;
+}
+.p6{
+	animation-delay: 3.5s;
+}
+.p7{
+	animation-delay: 4s;
+}
+.p8{
+	animation-delay: 4.5s;
+}
+.p9{
+	animation-delay: 5s;
+}
+.main{
+	animation-delay: 5.5s;
+}

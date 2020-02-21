@@ -1,0 +1,280 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="animate.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="javachart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="wow.min.js"></script>
+  <title>achievements</title>
+  <style>
+   
+  
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 'Titillium Web', sans-serif;
+  background: linear-gradient(54deg,#efefef);
+  color: #3c3f64;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background: #eee;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 15px 5px rgba(0,0,0,0.6); transition: 0.5s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.timeline ul li div time {
+  position: absolute;
+  background: #f5af19;
+  width: 80px;
+  height: 30px;
+  top: -15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.timeline ul li div div {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeline ul li div div p {
+  text-align: center;
+}
+.timeline ul li div .discovery {
+  margin-right: 10px;
+}
+.timeline ul li:nth-of-type(odd) > div {
+  left: 45px;
+}
+.timeline ul li:nth-of-type(even) > div {
+  left: -439px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+  transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+  transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+    flex-direction: column;
+  }
+  .timeline ul li div div {
+    width: 80%;
+    margin: 10px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -289px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: #efefef;
+  }
+
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: 45px;
+  }
+}
+
+   
+  </style>
+ </head>
+ <body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="achievements.html">Achievements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cont.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </section>
+
+  <div class="container animated zoomIn title ">
+    <h1>Achievements</h1>
+
+
+
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            
+        
+     
+              <span>We  are proud to say that we have been AWARDED as a “BHARAT VIKAS RATAN AWARD (2009)” by Govt. of India, Best Entrepreneur award by MCED (2005) and Best Project Model Presentation Award by MGIRI (2011).</span>
+      
+          </div>
+        </li>
+
+         <li>
+          <div>
+  
+     
+              <span>We have been also felicitated in cover page of UDYOJAK MAGZINE (2006) as a Best Entrepreneur and Honored by MCED, offered us to work with them as a Role Model Entrepreneur.</span>
+            </div>
+    
+        </li>
+
+        <li>
+          <div>
+  
+          
+              
+              <span> Our achievements & innovative researches Noticed & Published by all leading News Papers i.e. Lokmat, The Hitvada, Times of India, Loksatta, Sakal etc. </span>
+            </div>
+  
+        </li>
+
+        <li>
+          <div>
+           
+    
+          
+              <span> We have supplied & installed more than 5,700, Solar Electrical Security Fencing systems which safeguarded many farms & business houses from animals & burglars.</span>
+  
+          </div>
+        </li>
+
+        <li>
+          <div>
+          
+    
+          
+              <span>Around 28,000 hector of Wasteland,we brought under Cultivation by installing our Solar Security Fencing systems. With this we helped many farmers to grow economically and now we attached with them socially. </span>
+          </div>
+        </li>
+
+        <li>
+    
+           
+           <div>
+        
+          
+              <span> With our rigorous follow-ups & efforts, we have helped more than 400 Farmers to successfully obtained Subsidy of nearly 75%, on our supplied Solar Security Fencing systems, from the forest Departments to those farm Lands which was situated closed to Reserved Forest land.
+      </span>
+            </div>
+  
+        </li>
+       
+      </ul>
+    </section>
+
+
+
+   
+ 
+<script>
+      
+var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      if(!items[i].classList.contains("in-view")){
+        items[i].classList.add("in-view");
+      }
+    } else if(items[i].classList.contains("in-view")) {
+        items[i].classList.remove("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+</script>
+ </body>
+ </html>
